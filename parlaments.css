@@ -16,17 +16,18 @@ nav{
   font-family: 'Poppins', sans-serif;}
 
 .heading {
-  position: flex;
+  position: relative;
 }
 
 .heading h2 {
   color: transparent;
-  font-size: 3.5em;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+  font-size: 4em;
   position: absolute;
   transform: translate(-50%, -50%);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
 }
+
 
 .pictures{
   max-width: 100%;
@@ -126,7 +127,7 @@ background: transparent;
   justify-content: center;
   align-items: center;
   position: relative;
-  display: flex;
+  display: flex  ;
 }
 .croatia img {
 
