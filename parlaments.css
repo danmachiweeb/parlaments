@@ -22,7 +22,6 @@ nav{
 .heading h2 {
   color: transparent;
   font-size: 4em;
-  letter-spacing: 0.2em;
   position: absolute;
   transform: translate(-50%, -50%);
   -webkit-text-stroke-width: 2px;
