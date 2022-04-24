@@ -7,6 +7,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -14,6 +18,8 @@ nav{
   min-height: 12vh;
   background-color:#5D4954;
   font-family: 'Poppins', sans-serif;}
+
+
 .heading {
   position: relative;
 }

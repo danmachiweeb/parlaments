@@ -1,5 +1,5 @@
 do {
-    .add({
+    add({
         targets: '.ml5 .line',
         opacity: [0.5,1],
         scaleX: [0, 1],
@@ -39,4 +39,5 @@ do {
         delay: 1000
       });
 } while (true);
+
  
