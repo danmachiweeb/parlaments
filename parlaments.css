@@ -15,7 +15,7 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 12vh;
+  min-height: 8vh;
   background-color:#5D4954;
   font-family: 'Poppins', sans-serif;}
 
