@@ -7,14 +7,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  overflow: auto;
-  height: 100%;
-}
-html {
-  overflow: hidden;
-  height: 100%;
-}
 nav{
   display: flex;
   justify-content: space-around;
