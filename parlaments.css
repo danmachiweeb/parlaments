@@ -22,7 +22,7 @@ nav{
 .heading h2 {
   color: #fff;
   font-size: 4em;
-  position: inherit;
+  position: absolute;
   transform: translate(-50%, -50%);
 
 }
@@ -40,6 +40,7 @@ nav{
 @keyframes animate {
   0%,
   100% {
+    animation-delay: 1s;
     clip-path: polygon(
       0% 45%,
       16% 44%,
@@ -54,6 +55,7 @@ nav{
   }
 
   50% {
+    -o-animation-delay: 1s;
     clip-path: polygon(
       0% 60%,
       15% 65%,
