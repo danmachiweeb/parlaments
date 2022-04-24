@@ -24,19 +24,17 @@ nav{
   font-size: 4em;
   position: absolute;
   transform: translate(-50%, -50%);
-  animation-delay: 1s;
+
 }
 
 .heading h2:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px white;
-  animation-delay: 1s;
 }
 
 .heading h2:nth-child(2) {
   color: white;
   animation: animate 4s ease-in-out infinite;
-  animation-delay: 1s;
 }
 
 @keyframes animate {
