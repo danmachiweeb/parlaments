@@ -16,17 +16,17 @@ nav{
   font-family: 'Poppins', sans-serif;}
 
 .heading {
-  position: flex;
+  position: fixed;
 }
 
 .heading h2 {
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
-  font-size: 3.5em;
+  font-size: 4em;
   position: absolute;
   transform: translate(-50%, -50%);
-  }
+}
 
 .pictures{
   max-width: 100%;
