@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 nav{
-  display: flex;
+  display: fixed;
   justify-content: space-around;
   align-items: center;
   min-height: 12vh;
@@ -16,13 +16,13 @@ nav{
   font-family: 'Poppins', sans-serif;}
 
 .heading {
-  position: relative;
+  position: fixed;
 }
 
 .heading h2 {
   color: #fff;
-  font-size: 4em;
-  position: absolute;
+  font-size: 3.5em;
+  position: fixed;
   transform: translate(-50%, -50%);
 
 }
