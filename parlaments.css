@@ -23,7 +23,7 @@ nav{
   color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
-  font-size: 4em;
+  font-size: 3.5em;
   position: absolute;
   transform: translate(-50%, -50%);
 }
