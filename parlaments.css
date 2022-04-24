@@ -21,8 +21,7 @@ nav{
 
 .heading h2 {
   color: transparent;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  font-size: 36px;
   position: absolute;
   transform: translate(-50%, -50%);
   -webkit-text-stroke-width: 2px;
