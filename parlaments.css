@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-nav{
+header{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,6 +17,7 @@ nav{
 
 .heading {
   position: relative;
+
 }
 
 .heading h2 {
