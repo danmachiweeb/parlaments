@@ -328,7 +328,7 @@ background: transparent;
 } 
 .germanybtn{
  position:absolute;
- left: 50%; transform: translateX(-50%); top: 67%;
+ left: 50%; ; top: 67%;
  text-align: center;
 color: white;
 padding: 12px 34px;
