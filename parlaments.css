@@ -7,7 +7,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-header{
+body{
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+}
+.header{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,6 +36,17 @@ header{
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
+.content {
+  padding: 16px;
+}
+.sticky{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.sticky + .content{
+  padding-top: 100px;
+}
 
 
 .pictures{
@@ -38,7 +56,7 @@ header{
 }
 
 .austriapic {
-   width: 100%;
+   width: 100vw;
    justify-content: center;
    align-items: center;
    position: relative;
@@ -52,6 +70,7 @@ header{
 }
 .austriabtn{
   position: absolute;
+  align-items: center;
   left: 50%; transform: translateX(-50%); top: 67%;
   text-align: center;
  color: white;
@@ -60,6 +79,7 @@ header{
  border-radius: 12px;
  font-size: 24px;
  background: transparent;
+ transition: 1s ease;
 }
 .austriapic .austriabtn:hover{
    background-color: black;
@@ -89,6 +109,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .belgiumpic .belgiumbtn:hover{
   background-color: black;
@@ -118,6 +139,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .bulgariapic .bulgariabtn:hover{
   background-color: black;
@@ -146,6 +168,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .croatiapic .croatiabtn:hover{
   background-color: black;
@@ -173,6 +196,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .cypruspic .cyprusbtn:hover{
   background-color: black;
@@ -201,6 +225,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .czechiapic .czechiabtn:hover{
   background-color: black;
@@ -228,6 +253,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .denmarkpic .denmarkbtn:hover{
   background-color: black;
@@ -255,6 +281,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .estoniapic .estoniabtn:hover{
   background-color: black;
@@ -282,6 +309,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 .finlandpic .finlandbtn:hover{
   background-color: black;
@@ -309,6 +337,7 @@ border: 2px solid white;
 border-radius: 12px;
 font-size: 24px;
 background: transparent;
+transition: 1s ease;
 }
 
 .francepic .francebtn:hover{
@@ -316,11 +345,11 @@ background: transparent;
   transition: 1s ease;
 }
 .germanypic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
+  width: 100vw;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   display: flex;
 }
 .germany img {
 
@@ -328,15 +357,20 @@ background: transparent;
   flex-direction: column;
 } 
 .germanybtn{
- position:absolute;
- left: 50%; ; top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 30vw;
+  left: 50%; transform: translateX(-50%); top: 67%;
+  text-align: center;
+ color: white;
+ padding: 12px 34px;
+ border: 2px solid white;
+ border-radius: 12px;
+ font-size: 24px;
+ background: transparent;
+ transition: 1s ease;
 }
 
 .germanypic .germanybtn:hover{
