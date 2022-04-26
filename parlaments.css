@@ -17,10 +17,9 @@ body::-webkit-scrollbar {
 header{
   z-index: 999;
 position: sticky;
-position: -webkit-sticky;
  top: 0px;
+ display: flex;
  align-self: flex-start;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 12vh;
@@ -35,27 +34,16 @@ position: -webkit-sticky;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
-
-.pictures{
-  max-width: 100%;
-   height: auto;
-   background-color: #5D4954;
-}
-
-.austriapic {
-   width: 100vw;
+.pic{
+  width: 100vw;
+  height: auto;
+  background-color: #5D4954;
    justify-content: center;
    align-items: center;
    position: relative;
    display: flex;
 }
-.austria img {
-
-  display: flex;
-   max-height: 92vh;
-   flex-direction: column;
-}
-.austriabtn{
+.countrybtn{
   position: absolute;
   align-items: center;
   width: 156px;
@@ -69,318 +57,12 @@ position: -webkit-sticky;
  font-size: 24px;
  background: transparent;
 }
-.austriapic .austriabtn:hover{
-   background-color: black;
+.pic .countrybtn:hover{
+  background-color: black;
    transition: 1s ease;
-}
-
-.belgiumpic {
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
 }
 .belgium img {
  display: flex;
   max-height: 92vh;
   filter: brightness(50%);
-} 
-.belgiumbtn{
- position:absolute;
- width: 156px;
-  height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
 }
-.belgiumpic .belgiumbtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-
-
-.bulgariapic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-}
-.bulgaria img {
-
- display: flex;
-  flex-direction: column;
-} 
-.bulgariabtn{
- position:absolute;
- width: 156px;
-  height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-.bulgariapic .bulgariabtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-
-.croatiapic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex  ;
-}
-.croatia img {
-
- display: flex;
-  flex-direction: column;
-} 
-.croatiabtn{
- position:absolute;
- width: 156px;
-  height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-.croatiapic .croatiabtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-.cypruspic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-}
-.cyprus img {
-
- display: flex;
-  flex-direction: column;
-} 
-.cyprusbtn{
- position:absolute;
- width: 156px;
-  height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-.cypruspic .cyprusbtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-
-.czechiapic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-}
-.czechia img {
-
- display: flex;
-  flex-direction: column;
-} 
-.czechiabtn{
- position:absolute;
- width: 156px;
-  height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-.czechiapic .czechiabtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-.denmarkpic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-}
-.denmark img {
-
- display: flex;
-  flex-direction: column;
-} 
-.denmarkbtn{
- position:absolute;
- width: 156px;
-  height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-.denmarkpic .denmarkbtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-.estoniapic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-}
-.estonia img {
-
- display: flex;
-  flex-direction: column;
-} 
-.estoniabtn{
- position:absolute;
- width: 156px;
-  height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-.estoniapic .estoniabtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-.finlandpic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-}
-.finland img {
-
- display: flex;
-  flex-direction: column;
-} 
-.finlandbtn{
- position:absolute;
- width: 156px;
- height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-.finlandpic .finlandbtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-.francepic {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-}
-.france img {
-
- display: flex;
-  flex-direction: column;
-} 
-.francebtn{
- position:absolute;
- width: 156px;
- height: 63px;
- left: 50%; transform: translateX(-50%); top: 67%;
- text-align: center;
-color: white;
-padding: 12px 34px;
-border: 2px solid white;
-border-radius: 12px;
-font-size: 24px;
-background: transparent;
-transition: 1s ease;
-}
-
-.francepic .francebtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-.germanypic {
-  width: 100vw;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   display: flex;
-}
-.germany img {
-
- display: flex;
-  flex-direction: column;
-} 
-.germanybtn{
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 156px;
-  height: 63px;
-  left: 50%; transform: translateX(-50%); top: 67%;
-  text-align: center;
- color: white;
- padding: 12px 34px;
- border: 2px solid white;
- border-radius: 12px;
- font-size: 24px;
- background: transparent;
- transition: 1s ease;
-}
-
-.germanypic .germanybtn:hover{
-  background-color: black;
-  transition: 1s ease;
-}
-
