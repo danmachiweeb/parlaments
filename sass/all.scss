@@ -1,0 +1,95 @@
+@use "main";
+@mixin countrybtn {
+    position: absolute;
+    align-items: center;
+    width: 156px;
+    height: 63px;
+    left: 50%; transform: translateX(-50%); top: 67%;
+    text-align:center;
+    color: white;
+    padding: 12px 4px;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 24px;
+    background: transparent;
+}
+@mixin header {
+    z-index: 999;
+    position: sticky;
+    position: -webkit-sticky;
+     top: 0px;
+     display: flex; 
+     align-self: flex-start;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 12vh;
+      background-color:main.$primary-color;
+      font-family: 'Poppins', sans-serif;
+}
+@mixin heading {
+    color: transparent;
+    font-size: 3.5em;
+    position: absolute;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+@mixin pic {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    background-color: #5D4954;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+}
+@mixin longbtn {
+    position: absolute;
+    align-items: center;
+    width: 156px;
+    height: 63px;
+    left: 50%; transform: translateX(-50%); top: 67%;
+    text-align:center;
+    color: white;
+    padding: 12px 4px;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 20px;
+    background: transparent;
+}
+
+
+header {
+    @include header;
+}
+   
+   .heading h2 {
+    @include heading;
+   }
+
+body{
+    overflow: auto;
+    background-color: main.$primary-color;
+    }   
+
+    body::-webkit-scrollbar { 
+    display: none;
+    }  
+
+   .pic{
+    @include pic;
+    }
+    
+    .countrybtn{
+        @include countrybtn;
+    }
+    .pic .countrybtn:hover{
+        background-color: black;
+        transition: 1s ease;
+    }
+    .longbtn{
+        @include longbtn;
+        
+    }
+ 

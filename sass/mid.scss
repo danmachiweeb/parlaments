@@ -1,0 +1,33 @@
+@use "all";
+@use "main";
+header {
+    @include all.header;
+}
+   
+   .heading h2 {
+    @include all.heading;
+   }
+
+body{
+    overflow: auto;
+    background-color: main.$primary-color;
+    }   
+
+    body::-webkit-scrollbar { 
+    display: none;
+    }  
+
+   .pic{
+    @include all.pic;
+    }
+    
+    .countrybtn{
+        @include all.countrybtn;
+    }
+    .pic .countrybtn:hover{
+        background-color: black;
+        transition: 1s ease;
+    }
+    .longbtn{
+        @include all.longbtn;
+    }
