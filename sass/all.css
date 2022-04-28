@@ -58,6 +58,12 @@ body {
   max-height: 15vh;
   overflow: hidden;
 }
+@media (min-width: 1025px) {
+  .parts {
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+}
 
 a button {
   align-items: center;

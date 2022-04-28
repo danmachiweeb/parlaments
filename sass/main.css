@@ -60,10 +60,7 @@ body {
 }
 @media (min-width: 1025px) {
   .parts {
-    margin: 10vw;
-    margin-top: 0;
-    margin-left: 0;
-    flex-direction: row;
+    max-height: 7vh;
   }
 }
 
