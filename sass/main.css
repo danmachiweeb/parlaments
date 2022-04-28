@@ -58,6 +58,14 @@ body {
   max-height: 15vh;
   overflow: hidden;
 }
+@media (min-width: 1025px) {
+  .parts {
+    margin: 10vw;
+    margin-top: 0;
+    margin-left: 0;
+    flex-direction: row;
+  }
+}
 
 a button {
   align-items: center;
@@ -71,13 +79,6 @@ a button {
   font-size: 24px;
   background: transparent;
   overflow: hidden;
-}
-@media (max-width: 352px) {
-  a button {
-    font-size: 18px;
-    width: 120px;
-    height: 50px;
-  }
 }
 a button:active {
   background-color: black;

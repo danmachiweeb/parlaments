@@ -1,5 +1,8 @@
 @use "all";
 @use "main";
+*,html{
+    scroll-behavior: smooth !important;
+}
 header {
     @include all.header;
 }
@@ -19,7 +22,7 @@ body{
 
    .pic{
     @include all.pic;
-    
+
     }
     
     .countrybtn{

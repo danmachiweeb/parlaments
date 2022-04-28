@@ -1,4 +1,7 @@
 @use "main";
+*,html{
+    scroll-behavior: smooth !important;
+}
 @mixin countrybtn {
     position: absolute;
     align-items: center;
@@ -16,6 +19,8 @@
         font-size: 18px;;
         width: 120px;
         height: 50px;
+        text-align: center;
+        justify-content: center;
     }
 }
 @mixin header {
@@ -51,6 +56,14 @@
     background-color: #5D4954;
      justify-content: center;
      position: relative;
+     @media (min-width:main.$big-screen){
+        width: 75vw;
+        left: 12.5vw;
+        radius: 30px;
+        transition: 1s ease-in;
+        align-items: center;
+        align-content: center;
+    }
 }
 @mixin longbtn {
     position: absolute;
@@ -69,9 +82,10 @@
         font-size: 14px;;
         width: 120px;
         height: 50px;
+        text-align: center;
+        justify-content: center;
     }
 }
-
 
 header {
     @include header;
@@ -92,6 +106,7 @@ body{
 
    .pic{
     @include pic;
+
     }
     
     .countrybtn{

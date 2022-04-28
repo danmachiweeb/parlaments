@@ -72,16 +72,13 @@ a button {
   background: transparent;
   overflow: hidden;
 }
-@media (max-width: 352px) {
-  a button {
-    font-size: 18px;
-    width: 120px;
-    height: 50px;
-  }
-}
 a button:active {
   background-color: black;
   transition: 0.15s ease;
+}
+
+*, html {
+  scroll-behavior: smooth !important;
 }
 
 header {
@@ -130,6 +127,16 @@ body::-webkit-scrollbar {
   justify-content: center;
   position: relative;
 }
+@media (min-width: 1025px) {
+  .pic {
+    width: 75vw;
+    left: 12.5vw;
+    radius: 30px;
+    transition: 1s ease-in;
+    align-items: center;
+    align-content: center;
+  }
+}
 
 .countrybtn {
   position: absolute;
@@ -152,6 +159,8 @@ body::-webkit-scrollbar {
     font-size: 18px;
     width: 120px;
     height: 50px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -181,6 +190,8 @@ body::-webkit-scrollbar {
     font-size: 14px;
     width: 120px;
     height: 50px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -189,6 +200,10 @@ body::-webkit-scrollbar {
   transition: 1s ease;
 }
 
+*, html {
+  scroll-behavior: smooth !important;
+}
+
 header {
   z-index: 999;
   position: sticky;
@@ -235,6 +250,16 @@ body::-webkit-scrollbar {
   justify-content: center;
   position: relative;
 }
+@media (min-width: 1025px) {
+  .pic {
+    width: 75vw;
+    left: 12.5vw;
+    radius: 30px;
+    transition: 1s ease-in;
+    align-items: center;
+    align-content: center;
+  }
+}
 
 .countrybtn {
   position: absolute;
@@ -257,6 +282,8 @@ body::-webkit-scrollbar {
     font-size: 18px;
     width: 120px;
     height: 50px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -286,6 +313,8 @@ body::-webkit-scrollbar {
     font-size: 14px;
     width: 120px;
     height: 50px;
+    text-align: center;
+    justify-content: center;
   }
 }
 

@@ -8,6 +8,8 @@
 $font-stack:Poppins, sans-serif;
 $primary-color:#5D4954;
 $small-screen: 352px;
+$big-screen: 1025px;
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -49,7 +51,7 @@ body {
     margin-bottom: 10vh;
     display: flex;
     align-items: center;
-justify-content: center;
+    justify-content: center;
 position: relative;
 width: 100vw;
 max-height: 15vh;
@@ -68,11 +70,7 @@ a{
   font-size: 24px;
   background: transparent;
   overflow: hidden;
-  @media (max-width:$small-screen){
-    font-size: 18px;;
-    width: 120px;
-    height: 50px;
-}}
+}
 button:active{
     background-color: black;
     transition: 0.15s ease;
