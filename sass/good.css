@@ -34,6 +34,11 @@ header {
   -webkit-text-stroke-color: white;
   text-align: center;
 }
+@media (max-width: 352px) {
+  .heading h2 {
+    font-size: 12vw;
+  }
+}
 
 body {
   width: 100%;
@@ -67,10 +72,16 @@ a button {
   background: transparent;
   overflow: hidden;
 }
-
-button:active {
+@media (max-width: 352px) {
+  a button {
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+  }
+}
+a button:active {
   background-color: black;
-  transition: 0.25s ease;
+  transition: 0.15s ease;
 }
 
 header {
@@ -96,6 +107,11 @@ header {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
+@media (max-width: 352px) {
+  .heading h2 {
+    font-size: 12vw;
+  }
+}
 
 body {
   overflow: auto;
@@ -112,7 +128,6 @@ body::-webkit-scrollbar {
   display: flex;
   background-color: #5D4954;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 
@@ -131,6 +146,13 @@ body::-webkit-scrollbar {
   border-radius: 12px;
   font-size: 24px;
   background: transparent;
+}
+@media (max-width: 352px) {
+  .countrybtn {
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+  }
 }
 
 .pic .countrybtn:hover {
@@ -153,6 +175,18 @@ body::-webkit-scrollbar {
   border-radius: 12px;
   font-size: 20px;
   background: transparent;
+}
+@media (max-width: 352px) {
+  .longbtn {
+    font-size: 14px;
+    width: 120px;
+    height: 50px;
+  }
+}
+
+.pic .longbtn:hover {
+  background-color: black;
+  transition: 1s ease;
 }
 
 header {
@@ -178,10 +212,15 @@ header {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
+@media (max-width: 352px) {
+  .heading h2 {
+    font-size: 12vw;
+  }
+}
 
 body {
-  overflow: auto;
   background-color: #5D4954;
+  overflow: auto;
 }
 
 body::-webkit-scrollbar {
@@ -194,7 +233,6 @@ body::-webkit-scrollbar {
   display: flex;
   background-color: #5D4954;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 
@@ -213,6 +251,13 @@ body::-webkit-scrollbar {
   border-radius: 12px;
   font-size: 24px;
   background: transparent;
+}
+@media (max-width: 352px) {
+  .countrybtn {
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+  }
 }
 
 .pic .countrybtn:hover {
@@ -235,6 +280,18 @@ body::-webkit-scrollbar {
   border-radius: 12px;
   font-size: 20px;
   background: transparent;
+}
+@media (max-width: 352px) {
+  .longbtn {
+    font-size: 14px;
+    width: 120px;
+    height: 50px;
+  }
+}
+
+.pic .longbtn:hover {
+  background-color: black;
+  transition: 1s ease;
 }
 
 /*# sourceMappingURL=good.css.map */

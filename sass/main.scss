@@ -7,6 +7,7 @@
 }
 $font-stack:Poppins, sans-serif;
 $primary-color:#5D4954;
+$small-screen: 352px;
 body::-webkit-scrollbar {
   display: none;
 }
@@ -24,15 +25,18 @@ header {
     min-height: 18vh;
 }
 .heading h2 {
-    color: transparent;
-    font-size: 3.5em;
-    position: absolute;
-    align-items: center;
-    max-height:16vh;
-    transform: translate(-50%, -50%);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-    text-align: center;
+  color: transparent;
+  font-size: 3.5em;
+  position: absolute;
+  align-items: center;
+  max-height:16vh;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+ text-align: center;
+ @media (max-width: $small-screen){
+  font-size: 12vw;;
+}
 }
 body {
     width: 100%;
@@ -64,8 +68,13 @@ a{
   font-size: 24px;
   background: transparent;
   overflow: hidden;
+  @media (max-width:$small-screen){
+    font-size: 18px;;
+    width: 120px;
+    height: 50px;
 }}
 button:active{
     background-color: black;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
+}
 }

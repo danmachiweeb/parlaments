@@ -9,8 +9,8 @@ header {
    }
 
 body{
-    overflow: auto;
     background-color: main.$primary-color;
+    overflow: auto;
     }   
 
     body::-webkit-scrollbar { 
@@ -19,6 +19,7 @@ body{
 
    .pic{
     @include all.pic;
+    
     }
     
     .countrybtn{
@@ -30,5 +31,9 @@ body{
     }
     .longbtn{
         @include all.longbtn;
+    }
+    .pic .longbtn:hover{
+        background-color: black;
+        transition: 1s ease;
     }
     

@@ -12,6 +12,11 @@
     border-radius: 12px;
     font-size: 24px;
     background: transparent;
+    @media (max-width:main.$small-screen){
+        font-size: 18px;;
+        width: 120px;
+        height: 50px;
+    }
 }
 @mixin header {
     z-index: 999;
@@ -25,6 +30,7 @@
       min-height: 12vh;
       background-color:main.$primary-color;
       font-family: 'Poppins', sans-serif;
+
 }
 @mixin heading {
     color: transparent;
@@ -34,14 +40,16 @@
     transform: translate(-50%, -50%);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
-}
+    @media (max-width: main.$small-screen){
+        font-size: 12vw;;
+    }
+    }
 @mixin pic {
     width: 100vw;
     height: auto;
     display: flex;
     background-color: #5D4954;
      justify-content: center;
-     align-items: center;
      position: relative;
 }
 @mixin longbtn {
@@ -57,6 +65,11 @@
     border-radius: 12px;
     font-size: 20px;
     background: transparent;
+    @media (max-width:main.$small-screen){
+        font-size: 14px;;
+        width: 120px;
+        height: 50px;
+    }
 }
 
 
@@ -90,6 +103,9 @@ body{
     }
     .longbtn{
         @include longbtn;
-        
+    }
+    .pic .longbtn:hover{
+        background-color: black;
+        transition: 1s ease;
     }
  
