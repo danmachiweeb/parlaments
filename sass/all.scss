@@ -59,10 +59,7 @@
      @media (min-width:main.$big-screen){
         width: 75vw;
         left: 12.5vw;
-        radius: 30px;
         transition: 1s ease-in;
-        align-items: center;
-        align-content: center;
     }
 }
 @mixin longbtn {

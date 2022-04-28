@@ -131,10 +131,7 @@ body::-webkit-scrollbar {
   .pic {
     width: 75vw;
     left: 12.5vw;
-    radius: 30px;
     transition: 1s ease-in;
-    align-items: center;
-    align-content: center;
   }
 }
 
