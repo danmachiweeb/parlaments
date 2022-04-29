@@ -86,6 +86,7 @@
 header {
     @include header;
 }
+
    
    .heading h2 {
     @include heading;
@@ -102,7 +103,7 @@ body{
 
    .pic{
     @include pic;
-    z-index: 1;
+    
 
     }
     
