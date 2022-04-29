@@ -9,6 +9,7 @@ $font-stack:Poppins, sans-serif;
 $primary-color:#5D4954;
 $small-screen: 352px;
 $big-screen: 1025px;
+$iphone-max: 400px;
 
 body::-webkit-scrollbar {
   display: none;
@@ -102,7 +103,16 @@ a{
 height: 36px;
 border-radius: 11px;
  font-size: 14px;
-}}}
+}
+@media (min-width: $iphone-max){
+  text-align:center;
+  padding: 6px 10px;
+ width: 156px;
+height: 63px;
+border-radius: 16px;
+ font-size: 20px;
+}
+}}
 
 }
 button:active{
