@@ -56,7 +56,7 @@ body {
   position: relative;
   width: 100vw;
   max-height: 15vh;
-  overflow: hidden;
+  overflow: visible;
 }
 @media (min-width: 1025px) {
   .parts {

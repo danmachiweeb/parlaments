@@ -56,12 +56,11 @@ body {
   position: relative;
   width: 100vw;
   max-height: 15vh;
-  overflow: hidden;
+  overflow: visible;
 }
 @media (min-width: 1025px) {
   .parts {
-    margin-top: 7%;
-    margin-bottom: 7%;
+    max-height: 7vh;
   }
 }
 
@@ -132,12 +131,13 @@ body::-webkit-scrollbar {
   background-color: #5D4954;
   justify-content: center;
   position: relative;
+  z-index: 1;
 }
 @media (min-width: 1025px) {
   .pic {
     width: 75vw;
     left: 12.5vw;
-    transition: 1s ease-in;
+    transition: 1s ease-out;
   }
 }
 

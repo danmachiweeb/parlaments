@@ -59,7 +59,7 @@
      @media (min-width:main.$big-screen){
         width: 75vw;
         left: 12.5vw;
-        transition: 1s ease-in;
+        transition: 1s ease-out;
     }
 }
 @mixin longbtn {
@@ -83,7 +83,6 @@
         justify-content: center;
     }
 }
-
 header {
     @include header;
 }
@@ -103,6 +102,7 @@ body{
 
    .pic{
     @include pic;
+    z-index: 1;
 
     }
     
