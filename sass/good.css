@@ -56,7 +56,12 @@ body {
   position: relative;
   width: 100vw;
   max-height: 15vh;
-  overflow: hidden;
+  overflow: visible;
+}
+@media (min-width: 1025px) {
+  .parts {
+    max-height: 7vh;
+  }
 }
 
 a button {
@@ -126,15 +131,13 @@ body::-webkit-scrollbar {
   background-color: #5D4954;
   justify-content: center;
   position: relative;
+  z-index: 1;
 }
 @media (min-width: 1025px) {
   .pic {
     width: 75vw;
     left: 12.5vw;
-    radius: 30px;
-    transition: 1s ease-in;
-    align-items: center;
-    align-content: center;
+    transition: 1s ease-out;
   }
 }
 
@@ -254,10 +257,7 @@ body::-webkit-scrollbar {
   .pic {
     width: 75vw;
     left: 12.5vw;
-    radius: 30px;
-    transition: 1s ease-in;
-    align-items: center;
-    align-content: center;
+    transition: 1s ease-out;
   }
 }
 
