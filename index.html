@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="sass/main.css">
-  <script src="parlaments.js"></script>
+ 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, Cache-Control: max-age3600">
@@ -14,7 +14,7 @@
   <link rel="preload" href="images/luxembourd-slideshow.webp" as="image">
   <link rel="preload" href="images/france-slideshow.webp" as="image">
   <link rel="preload" href="images/hungary-slideshow.webp" as="image">
- 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 
   <title>Parliaments of EU</title>
@@ -30,37 +30,27 @@
   </header>
 
   <div class="slideshow-container">
-
-    <div class="slides fade">
+    <div class="slide">
       <img src="images/austria-slideshow.webp"style="width:100%;">
       <div class="text">Austria</div>
     </div>
  
-    <div class="slides fade">
+    <div class="slide">
       <img src="images/luxembourd-slideshow.webp" style="width:100%;">
       <div class="text">Luxembourg</div>
     </div>
   
-    <div class="slides fade">
+    <div class="slide">
       <img src="images/france-slideshow.webp"style="width:100%;">
       <div class="text">France</div>
     </div>
 
- <div class="slides fade">
-      <img src="images/hungary-slideshow.webp"style="width:100%;">
+ <div class="slide">
+      <img src="images/hungary-slideshow.webp" style="width:100%;">
       <div class="text">Hungary</div>
     </div>
 
   </div>
-  <div style="text-align:center">
-    <div class="dot"></div> 
-    <div class="dot"></div> 
-    <div class="dot"></div> 
-    <div class="dot"></div>
-    
-
-  </div>
-</div>
 
   <div class="parts">
 <a href="all.html"><button>All</button></a>
@@ -75,8 +65,20 @@
       <a href="bad.html"><button>Ugly</button></a>
       </div>
   </body>
-
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+ <script>
+ $('.slideshow-container').slick({
+  infinite: true,
+      dots: true,
+      slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true,
+autoplaySpeed: 3000,
+arrows: false,
+dots: false,
+});
+</script>
   <link rel="preload" href="sass/good.css" as="style">
   <link rel="preload" href="sass/all.css" as="style">
   <link rel="preload" href="images/austria.webp" as="image">

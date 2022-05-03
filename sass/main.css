@@ -11,16 +11,19 @@ body::-webkit-scrollbar {
 }
 
 .slideshow-container {
+  width: 88vw;
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-
-.slides {
-  display: none;
+.slideshow-container .slide {
+  position: relative;
 }
-
-.text {
+.slideshow-container .slide img {
+  border-radius: 4%;
+  text-align: center;
+}
+.slideshow-container .slide .text {
   color: whitesmoke;
   font-size: 15px;
   padding: 8px 12px;
@@ -45,19 +48,6 @@ body::-webkit-scrollbar {
   background-color: #717171;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 header {
   z-index: 999;
   position: sticky;
@@ -124,7 +114,7 @@ body {
 
 .parts {
   margin-top: 2vh;
-  margin-bottom: 10vh;
+  margin-bottom: 7.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
