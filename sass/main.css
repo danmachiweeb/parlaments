@@ -10,6 +10,56 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top: 2vh;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 header {
   z-index: 999;
   position: sticky;
@@ -18,12 +68,21 @@ header {
   align-self: flex-start;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   background-color: #5D4954;
   font-style: Poppins, sans-serif;
-  min-height: 18vh;
+  height: 200px;
+}
+
+.heading {
+  margin-top: 2vh;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .heading h2 {
+  top: 33%;
   color: transparent;
   font-size: 3.5em;
   position: absolute;
@@ -40,15 +99,33 @@ header {
   }
 }
 
+.heading h3 {
+  top: 66%;
+  color: transparent;
+  font-size: 3.5em;
+  position: absolute;
+  align-items: center;
+  max-height: 16vh;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  text-align: center;
+}
+@media (max-width: 352px) {
+  .heading h3 {
+    font-size: 12vw;
+  }
+}
+
 body {
   width: 100%;
   height: 100%;
   background-color: #5D4954;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .parts {
-  margin-top: 10vh;
+  margin-top: 2vh;
   margin-bottom: 10vh;
   display: flex;
   align-items: center;
@@ -83,7 +160,6 @@ a button {
   border-radius: 12px;
   font-size: 24px;
   background: transparent;
-  overflow: hidden;
 }
 @media (max-width: 352px) {
   a button {

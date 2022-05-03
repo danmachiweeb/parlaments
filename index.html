@@ -9,7 +9,7 @@
   <script src="parlaments.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,max-scale=1.0, user-scalable = no, Cache-Control: max-age3600">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, Cache-Control: max-age3600">
   <link rel="preload" href="sass/good.css" as="style">
   <link rel="preload" href="sass/all.css" as="style">
   <link rel="preload" href="images/austria.webp" as="image">
@@ -42,11 +42,54 @@
   <title>Parliaments of EU</title>
 </head>
 <body>
+
 <header>
     <div class="heading">
-      <h2>Parliaments<br> of EU</h2>
+      <h2>Parliaments</h2>
+
+      <h3>of EU</h3>
     </div>
   </header>
+
+
+  
+  <div class="slideshow-container">
+
+    <div class="slides fade">
+      <img src="images/austria-slideshow.webp"style="width:100%;">
+      <div class="text">Austria</div>
+    </div>
+ 
+    <div class="slides fade">
+      <img src="images/luxembourd-slideshow.webp" style="width:100%;">
+      <div class="text">Luxembourg</div>
+    </div>
+  
+    <div class="slides fade">
+      <img src="images/france-slideshow.webp"style="width:100%;">
+      <div class="text">France</div>
+    </div>
+
+ <div class="slides fade">
+      <img src="images/hungary-slideshow.webp"style="width:100%;">
+      <div class="text">Hungary</div>
+    </div>
+
+  </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+    
+
+  </div>
+</div>
+
+
+
+
+
   <div class="parts">
 <a href="all.html"><button>All</button></a>
 </div>
@@ -59,6 +102,7 @@
     <div class="parts">
       <a href="bad.html"><button>Ugly</button></a>
       </div>
+      
   </body>
   
     
