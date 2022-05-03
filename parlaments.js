@@ -1,5 +1,5 @@
 
-body.onload = function(){
+window.onload = function(){
   let slideIndex = 1;
   showSlides(slideIndex);
 function showSlides(n) {
