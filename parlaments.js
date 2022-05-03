@@ -1,5 +1,5 @@
 
-style.onload = function(){
+body.onload = function(){
   let slideIndex = 1;
   showSlides(slideIndex);
 function showSlides(n) {
