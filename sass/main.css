@@ -10,6 +10,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.slick-list {
+  border-radius: 7%;
+}
+
 .slideshow-container {
   width: 88vw;
   max-width: 1000px;
@@ -20,7 +24,6 @@ body::-webkit-scrollbar {
   position: relative;
 }
 .slideshow-container .slide img {
-  border-radius: 4%;
   text-align: center;
 }
 .slideshow-container .slide .text {
@@ -31,21 +34,6 @@ body::-webkit-scrollbar {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-.dot {
-  pointer-events: none;
-  height: 15px;
-  width: 15px;
-  margin-top: 2vh;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.8s ease;
-}
-
-.active {
-  background-color: #717171;
 }
 
 header {
@@ -113,7 +101,7 @@ body {
 }
 
 .parts {
-  margin-top: 2vh;
+  margin-top: 5vh;
   margin-bottom: 7.5vh;
   display: flex;
   align-items: center;
