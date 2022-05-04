@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
 
 header {
   z-index: 999;
-  position: sticky;
+  position: relative;
   top: 0px;
   display: flex;
   align-self: flex-start;
