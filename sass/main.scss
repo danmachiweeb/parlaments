@@ -103,9 +103,9 @@ body {
     background-color: $primary-color;
     overflow-x: hidden;
 }
-.parts {
+.part {
     margin-top: 5vh;
-    margin-bottom: 7.5vh;
+    margin-bottom: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,14 +116,45 @@ overflow: visible;
 @media (min-width:$big-screen){
   max-height: 7vh;
 }
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-  bottom: 15vh
-  margin-top 5vh;
-  margin-bottom:  5vh;
-
-}}
 }
+.parts{
+  
+  display: flex;
+  flex-direction: row;
+ align-content: center;
+  justify-content: space-around;
+position: relative;
+left: 6vw;
+width: 88vw;
+max-height: 15vh;
+overflow: visible;
+@media (min-width:$big-screen){
+max-height: 7vh;
+}
+  button{
+    align-items: center;
+    width: 102px;
+    height: 42px;
+    text-align:center;
+    color: white;
+    padding: 8px 17px;
+    border: 2px solid white;
+    border-radius: 14px;
+    font-size: 16px;
+    background: transparent;
+    @media (max-width: $small-screen){
+       text-align:center;
+       justify-content: center;
+       padding: 4px 18px;
+      width: 75px;
+    height: 30px;
+    border-radius: 10px;
+      font-size: 12px;
+  }}
+  button:active{
+    background-color: black;
+    transition: 0.15s ease;
+}}
 a{
     button{
   align-items: center;
@@ -143,34 +174,8 @@ a{
   height: 40px;
   border-radius: 11px;
     font-size: 16px;
-  }
-  @media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-  text-align:center;
-  padding: 9px 22px;
-  width: 120px;
-  height: 50px;
-  border-radius: 11px;
- font-size: 18px;
- @media (max-width: $small-screen){
-  text-align:center;
-  padding: 6px 10px;
- width: 100px;
-height: 36px;
-border-radius: 11px;
- font-size: 14px;
-}
-@media (min-width: $iphone-max){
-  text-align:center;
-  padding: 6px 10px;
- width: 140px;
-height: 53px;
-border-radius: 15px;
- font-size: 19px;
-}
 }}
 
-}
 button:active{
     background-color: black;
     transition: 0.15s ease;
