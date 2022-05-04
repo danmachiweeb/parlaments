@@ -134,13 +134,14 @@ max-height: 7vh;
   button{
     align-items: center;
     width: 95px;
-    height: 37px;
-    text-align:center;
+    height: 47px;
+    align-content: center;
+    justify-self:center;
     color: white;
     padding: 5px 16px;
     border: 2px solid white;
-    border-radius: 14px;
-    font-size: 15px;
+    border-radius: 12px;
+    font-size: 18px;
     background: transparent;
     @media (max-width: $small-screen){
        text-align:center;
