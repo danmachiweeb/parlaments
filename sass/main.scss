@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
   animation: item-animation 0.5s;
   justify-content: center;
   align-content: center;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   color: whitesmoke;
   cursor: pointer;
@@ -36,6 +36,12 @@ body::-webkit-scrollbar {
   text-decoration: none;
   user-select: none;
 
+  @media (max-width: 365px){
+    font-size: 14px;
+   }
+   @media (max-width: $small-screen){
+     font-size: 12;;
+   }
 }
 .item:active{
   user-select: none;
@@ -56,11 +62,17 @@ body::-webkit-scrollbar {
 }
 .folder {
   animation: item-animation 0.5s;
-  font-size: 18px;
+  font-size: 19px;
   text-decoration: none;
   color: whitesmoke;
   margin-top: 15px;
   margin-bottom: 3px;
+  @media (max-width: 365px){
+   font-size: 17px;
+  }
+  @media (max-width: $small-screen){
+    font-size: 14vw;;
+  }
 }
 .folder:active{
   user-select: none;
