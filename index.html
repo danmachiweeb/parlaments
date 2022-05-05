@@ -15,6 +15,9 @@
   <link rel="preload" href="images/france-slideshow.webp" as="image">
   <link rel="preload" href="images/hungary-slideshow.webp" as="image">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vuex"></script>
+
 
 
   <title>Parliaments of EU</title>
@@ -51,7 +54,6 @@
     </div>
   </div>
 
-
   <div class="part">
 <a href="all.html"><button>All</button></a>
 </div>
@@ -59,12 +61,10 @@
 
   <a href="good.html"><button>Pretty</button></a>
   
-    <a href="mid.html"><button>Mid</button></a>
+  <a href="mid.html"><button>Mid</button></a>
   
-   
-      <a href="bad.html"><button>Ugly</button></a>
+  <a href="bad.html"><button>Ugly</button></a>
     </div>
-  </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
  <script>
@@ -80,6 +80,187 @@ arrows: false,
   pauseOnFocus: false,
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/x-template" id="item-template">
+    <li>
+      <div
+        :class="{folder: isFolder}"
+        @click="toggle"
+        @dblclick="makeFolder">
+        {{ item.name }}
+        <span id="strelky" v-if="isFolder">{{ isOpen ? '↑' : '↓' }}</span>
+      </div>
+      <ul v-show="isOpen" v-if="isFolder">
+        <tree-item
+          class="item"
+          v-for="(child, index) in item.children"
+          :key="index"
+          :item="child"
+          @make-folder="$emit('make-folder', $event)"
+          @add-item="$emit('add-item', $event)"
+        ></tree-item>
+       
+      </ul>
+    </li>
+  </script>
+</head>
+<body>
+  
+  <!-- the demo root element -->
+  <ul id="demo">
+    <tree-item
+      class="item"
+      :item="treeData"
+      @make-folder="makeFolder"
+      @add-item="addItem"
+    ></tree-item>
+  </ul>
+
+  <script>
+    // demo data
+    var treeData = {
+      name: 'List of Eu states',
+    children: [
+      {  name: 'Founding member states (1957)',
+        children: [
+          
+          { name: 'Belgium' },
+          { name: 'France' },
+          { name: 'Germany' },
+          { name: 'Italy' },
+          { name: 'Luxembourgh' },
+          { name: 'The Netherlands' },
+        ],},
+       
+        
+       { name: 'First enlargement (1971)',
+        children: [
+        { name: 'Denmark' },
+        { name: 'Ireland' },
+        { name: 'UK (left 2020)' },
+        ],},
+
+        { name: 'Second enlargement (1981)',
+        children: [
+        { name: 'Greece' },
+        ],},
+
+        { name: 'Third enlargement (1986)',
+        children: [
+        { name: 'Spain' },
+        { name: 'Portugal' },
+        ],},
+
+        { name: 'Fourth enlargement (1995)',
+        children: [
+        { name: 'Austria' },
+        { name: 'Finland' },
+        { name: 'Sweden' },
+        ],},
+
+      {  name: 'Largest enlargement (2004)',
+        children: [
+        { name: 'Czech Republic' },
+        { name: 'Estonia' },
+        { name: 'Cyprus' },
+        { name: 'Latvia' },
+        { name: 'Lithuania' },
+        { name: 'Hungary' },
+        { name: 'Malta' },
+        { name: 'Poland' },
+        { name: 'Slovakia' },
+        { name: 'Slovenia' },
+        ],},
+
+       { name: 'Sixth enlargement (2007)',
+        children: [
+        { name: 'Romania' },
+        { name: 'Bulgaria' },
+        ], },
+
+        { name: 'Seventh enlargement (2013)',
+        children: [
+        { name: 'Croatia' },
+        ],},
+
+    ]
+    };
+
+    // define the tree-item component
+    Vue.component("tree-item", {
+      template: "#item-template",
+      props: {
+        item: Object
+      },
+      data: function() {
+        return {
+          isOpen: false
+        };
+      },
+      
+      computed: {
+        isFolder: function() {
+          return this.item.children && this.item.children.length;
+        }
+      },
+      methods: {
+        toggle: function() {
+          if (this.isFolder) {
+            this.isOpen = !this.isOpen;
+          }
+        },
+        makeFolder: function() {
+          if (!this.isFolder) {
+            this.$emit("make-folder", this.item);
+            this.isOpen = true;
+          }
+        }
+      }
+    });
+
+    // boot up the demo
+    var demo = new Vue({
+      el: "#demo",
+      data: {
+        treeData: treeData
+      },
+      methods: {
+        makeFolder: function(item) {
+          Vue.set(item, "children", []);
+          this.addItem(item);
+        
+        }
+      }
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
   <link rel="preload" href="sass/good.css" as="style">
   <link rel="preload" href="sass/all.css" as="style">
   <link rel="preload" href="images/austria.webp" as="image">
