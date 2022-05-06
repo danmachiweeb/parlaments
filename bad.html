@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, Cache-Control: max-age=3600">
     <link rel="stylesheet" href="sass/good.css">
-    <script src="transition.js"></script>
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+    <title>Bad Parliaments </title>
 </head>
 <body>
     <header>
@@ -16,33 +18,108 @@
         </div>
         </a>
     </header>
+
+    <div>
+      <p id="disappearing">Click to see build date</p>
+    </div>
+    <script>
+      setTimeout(function() {
+      $("#disappearing").fadeOut(1200);
+    }, 5000);
+    </script>
     
     <div class= "pictures">
     <div class="pic"><img src="images/bulgaria.webp" width="100%" height="30%">
-        <a><button class="countrybtn">Bulgaria</button></a>
+        <a><button id="bulgaria" class="countrybtn">Bulgaria</button></a>
         </div>
         <div class="pic"><img src="images/cyprus.webp" width="100%" height="30%">
-          <a><button class="countrybtn">Cyprus</button></a>
+          <a><button id="cyprus" class="countrybtn">Cyprus</button></a>
           </div>
           <div class="pic"><img src="images/finland.webp" width="100%" height="30%">
-            <a><button class="countrybtn">Finland</button></a>
+            <a><button id="finland" class="countrybtn">Finland</button></a>
             </div>
             <div class="pic"><img src="images/lithuania.webp" width="100%" height="30%">
-              <a><button class="countrybtn">Lithuania</button></a>
+              <a><button id="lithuania" class="countrybtn">Lithuania</button></a>
               </div>
               <div class="pic"><img src="images/malta.webp" width="100%" height="30%">
-                <a><button class="countrybtn">Malta</button></a>
+                <a><button id="malta" class="countrybtn">Malta</button></a>
                 </div>
                 <div class="pic"><img src="images/romania.webp" width="100%" height="30%">
-                  <a><button class="countrybtn">Romania</button></a>
+                  <a><button id="romania" class="countrybtn">Romania</button></a>
                   </div>
                   <div class="pic"><img src="images/slovakia.webp" width="100%" height="30%">
-                    <a><button class="countrybtn">Slovakia</button></a>
+                    <a><button id="slovakia" class="countrybtn">Slovakia</button></a>
                     </div>
                     <div class="pic"><img src="images/slovenia.webp" width="100%" height="30%">
-                      <a><button class="countrybtn">Slovenia</button></a>
+                      <a><button id="slovenia" class="countrybtn">Slovenia</button></a>
                       </div>
     </div>
 
 </body>
+
+<script>
+$(function(){
+   $("#bulgaria").click(function () {
+      $(this).text(function(i, text){
+          return text === "1884" ? "Bulgaria" : "1884";
+      })
+   });
+})
+
+$(function(){
+   $("#cyprus").click(function () {
+      $(this).text(function(i, text){
+          return text === "2006" ? "Cyprus" : "2006";
+      })
+   });
+})
+
+$(function(){
+   $("#finland").click(function () {
+      $(this).text(function(i, text){
+          return text === "1926" ? "Finland" : "1926";
+      })
+   });
+})
+
+$(function(){
+   $("#lithuania").click(function () {
+      $(this).text(function(i, text){
+          return text === "1976" ? "Lithuania" : "1976";
+      })
+   });
+})
+
+$(function(){
+   $("#malta").click(function () {
+      $(this).text(function(i, text){
+          return text === "2011" ? "Malta" : "2011";
+      })
+   });
+})
+
+$(function(){
+   $("#romania").click(function () {
+      $(this).text(function(i, text){
+          return text === "1984" ? "Romania" : "1984";
+      })
+   });
+})
+
+$(function(){
+   $("#slovakia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1994" ? "Slovakia" : "1994";
+      })
+   });
+})
+
+$(function(){
+   $("#slovenia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1954" ? "Slovenia" : "1954";
+      })
+   });
+})
+</script>
 </html>

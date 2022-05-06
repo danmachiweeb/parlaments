@@ -27,17 +27,11 @@ body{
     .countrybtn{
         @include all.countrybtn;
     }
-    .pic .countrybtn:hover{
-        background-color: black;
-        transition: 1s ease;
-    }
+
     .longbtn{
         @include all.longbtn;
     }
-    .pic .longbtn:hover{
-        background-color: black;
-        transition: 1s ease;
-    }
+
     
 
 

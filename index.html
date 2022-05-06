@@ -64,8 +64,12 @@
   <a href="mid.html"><button>Mid</button></a>
   
   <a href="bad.html"><button>Ugly</button></a>
-    </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
  <script>
  $('.slideshow-container').slick({
@@ -80,13 +84,6 @@ arrows: false,
   pauseOnFocus: false,
 });
 </script>
-
-
-
-
-
-
-
 
 
 
@@ -116,8 +113,7 @@ arrows: false,
 </head>
 <body>
   
-  <!-- the demo root element -->
-  <ul id="demo">
+  <ul id="tree">
     <tree-item
       class="item"
       :item="treeData"
@@ -127,7 +123,6 @@ arrows: false,
   </ul>
 
   <script>
-    // demo data
     var treeData = {
       name: 'List of EU states',
     children: [
@@ -195,8 +190,6 @@ arrows: false,
 
     ]
     };
-
-    // define the tree-item component
     Vue.component("tree-item", {
       template: "#item-template",
       props: {
@@ -206,8 +199,7 @@ arrows: false,
         return {
           isOpen: false
         };
-      },
-      
+      }, 
       computed: {
         isFolder: function() {
           return this.item.children && this.item.children.length;
@@ -227,10 +219,8 @@ arrows: false,
         }
       }
     });
-
-    // boot up the demo
-    var demo = new Vue({
-      el: "#demo",
+    var tree = new Vue({
+      el: "#tree",
       data: {
         treeData: treeData
       },
@@ -238,26 +228,10 @@ arrows: false,
         makeFolder: function(item) {
           Vue.set(item, "children", []);
           this.addItem(item);
-        
         }
       }
     });
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 

@@ -43,6 +43,8 @@ body {
 body .pictures {
   width: 100%;
   margin-bottom: 50px;
+  transition-delay: 7s;
+  transition: 2s ease;
 }
 
 body::-webkit-scrollbar {
@@ -94,6 +96,7 @@ p {
   border-radius: 12px;
   font-size: 24px;
   background: transparent;
+  user-select: none;
 }
 @media (max-width: 352px) {
   .countrybtn {
@@ -103,11 +106,6 @@ p {
     text-align: center;
     justify-content: center;
   }
-}
-
-.pic .countrybtn:hover {
-  background-color: black;
-  transition: 1s ease;
 }
 
 .longbtn {
@@ -125,6 +123,7 @@ p {
   border-radius: 12px;
   font-size: 20px;
   background: transparent;
+  user-select: none;
 }
 @media (max-width: 352px) {
   .longbtn {
@@ -134,11 +133,6 @@ p {
     text-align: center;
     justify-content: center;
   }
-}
-
-.pic .longbtn:hover {
-  background-color: black;
-  transition: 1s ease;
 }
 
 img {
@@ -222,6 +216,7 @@ body::-webkit-scrollbar {
   border-radius: 12px;
   font-size: 24px;
   background: transparent;
+  user-select: none;
 }
 @media (max-width: 352px) {
   .countrybtn {
@@ -231,11 +226,6 @@ body::-webkit-scrollbar {
     text-align: center;
     justify-content: center;
   }
-}
-
-.pic .countrybtn:hover {
-  background-color: black;
-  transition: 1s ease;
 }
 
 .longbtn {
@@ -253,6 +243,7 @@ body::-webkit-scrollbar {
   border-radius: 12px;
   font-size: 20px;
   background: transparent;
+  user-select: none;
 }
 @media (max-width: 352px) {
   .longbtn {
@@ -262,11 +253,6 @@ body::-webkit-scrollbar {
     text-align: center;
     justify-content: center;
   }
-}
-
-.pic .longbtn:hover {
-  background-color: black;
-  transition: 1s ease;
 }
 
 /*# sourceMappingURL=good.css.map */

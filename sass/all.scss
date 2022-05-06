@@ -21,6 +21,7 @@ $iphone-max: 400px;
     border-radius: 12px;
     font-size: 24px;
     background: transparent;
+    user-select: none;
     @media (max-width:$small-screen){
         font-size: 18px;;
         width: 120px;
@@ -84,6 +85,8 @@ $iphone-max: 400px;
 @mixin pictures {
     width: 100%;
     margin-bottom: 50px;
+    transition-delay:7s;
+    transition: 2s ease;
 }
 @mixin longbtn {
     position: absolute;
@@ -98,6 +101,7 @@ $iphone-max: 400px;
     border-radius: 12px;
     font-size: 20px;
     background: transparent;
+    user-select: none;
     @media (max-width:$small-screen){
         font-size: 14px;;
         width: 120px;
@@ -146,17 +150,10 @@ header {
     .countrybtn{
         @include countrybtn;
     }
-    .pic .countrybtn:hover{
-        background-color: black;
-        transition: 1s ease;
-    }
     .longbtn{
         @include longbtn;
     }
-    .pic .longbtn:hover{
-        background-color: black;
-        transition: 1s ease;
-    }
+
     img{
         border-radius: 24px;
     }

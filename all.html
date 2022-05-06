@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, Cache-Control: max-age=3600">
     <link rel="stylesheet" href="sass/all.css">
-    <script src="transition.js"></script>
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+    <title>All Parliaments</title>
 </head>
 <body>
 <header>
@@ -16,131 +18,345 @@
     </div>
   </a>
 </header>
-<div id="disapearing">
-  <p>Click to see build date</p>
+<div>
+  <p id="disappearing">Click to see build date</p>
 </div>
+<script>
+  setTimeout(function() {
+  $("#disappearing").fadeOut(1200);
+}, 5000);
+</script>
 <div class= "pictures">
     <div class="pic">
       <img src="images/austria.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Austria</button>
+        <button id="austria" class="countrybtn">Austria</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/belgium.webp" width="100%" height="30%">
-        <button class="countrybtn">Belgium</button>
+        <button id="belgium" class="countrybtn">Belgium</button>
     </div>
     <div class="pic">
       <img src="images/bulgaria.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Bulgaria</button>
+        <button id="bulgaria" class="countrybtn">Bulgaria</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/croatia.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Croatia</button>
+        <button id="croatia" class="countrybtn">Croatia</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/cyprus.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Cyprus</button>
+        <button id="cyprus" class="countrybtn">Cyprus</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/czechia.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Czechia</button>
+        <button id="czechia" class="countrybtn">Czechia</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/denmark.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Denmark</button>
+        <button id="denmark" class="countrybtn">Denmark</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/estonia.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Estonia</button>
+        <button id="estonia" class="countrybtn">Estonia</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/finland.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Finland</button>
+        <button id="finland" class="countrybtn">Finland</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/france.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">France</button>
+        <button id="france" class="countrybtn">France</button>
       </a>
     </div>
     <div class="pic">
       <img src="images/germany.webp" width="100%" height="30%">
       <a>
-        <button class="countrybtn">Germany</button>
+        <button id="germany" class="countrybtn">Germany</button>
         </a>
     </div>
 
     <div class="pic">
       <img src="images/greece.webp" width="100%" height="30%">
-    <a><button class="countrybtn">Greece</button></a>
+    <a><button id="greece" class="countrybtn">Greece</button></a>
     </div>
     <div class="pic"><img src="images/hungary.webp" width="100%" height="30%">
-    <a><button class="countrybtn">Hungary</button></a>
+    <a><button id="hungary" class="countrybtn">Hungary</button></a>
     </div>
     <div class="pic"><img src="images/ireland.webp" width="100%" height="30%">
-      <a><button class="countrybtn">Ireland</button></a>
+      <a><button id="ireland" class="countrybtn">Ireland</button></a>
       </div>
       <div class="pic"><img src="images/italy.webp" width="100%" height="30%">
-        <a><button class="countrybtn">Italy</button></a>
+        <a><button id="italy" class="countrybtn">Italy</button></a>
         </div>
         <div class="pic"><img src="images/latvia.webp" width="100%" height="30%">
-          <a><button class="countrybtn">Latvia</button></a>
+          <a><button id="latvia" class="countrybtn">Latvia</button></a>
           </div>
           <div class="pic"><img src="images/lithuania.webp" width="100%" height="30%">
-            <a><button class="countrybtn">Lithuania</button></a>
+            <a><button id="lithuania" class="countrybtn">Lithuania</button></a>
             </div>
             <div class="pic"><img src="images/luxembourg.webp" width="100%" height="30%">
-              <a><button class="longbtn">Luxembourg</button></a>
+              <a><button id="luxembourg" class="longbtn">Luxembourg</button></a>
               </div>
               <div class="pic"><img src="images/malta.webp" width="100%" height="30%">
-                <a><button class="countrybtn">Malta</button></a>
+                <a><button id="malta" class="countrybtn">Malta</button></a>
                 </div>
                 <div class="pic"><img src="images/netherlands.webp" width="100%" height="30%">
-                  <a><button class="longbtn">Netherlands</button></a>
+                  <a><button id="netherlands" class="longbtn">Netherlands</button></a>
                   </div>
                   <div class="pic"><img src="images/poland.webp" width="100%" height="30%">
-                    <a><button class="countrybtn">Poland</button></a>
+                    <a><button id="poland" class="countrybtn">Poland</button></a>
                     </div>
                     <div class="pic"><img src="images/portugal.webp" width="100%" height="30%">
-                      <a><button class="countrybtn">Portugal</button></a>
+                      <a><button id="portugal" class="countrybtn">Portugal</button></a>
                       </div>
                       <div class="pic"><img src="images/romania.webp" width="100%" height="30%">
-                        <a><button class="countrybtn">Romania</button></a>
+                        <a><button id="romania" class="countrybtn">Romania</button></a>
                         </div>
                         <div class="pic"><img src="images/slovakia.webp" width="100%" height="30%">
-                          <a><button class="countrybtn">Slovakia</button></a>
+                          <a><button id="slovakia" class="countrybtn">Slovakia</button></a>
                           </div>
                           <div class="pic"><img src="images/slovenia.webp" width="100%" height="30%">
-                            <a><button class="countrybtn">Slovenia</button></a>
+                            <a><button id="slovenia" class="countrybtn">Slovenia</button></a>
                             </div>
                             <div class="pic"><img src="images/spain.webp" width="100%" height="30%">
-                              <a><button class="countrybtn">Spain</button></a>
+                              <a><button id="spain" class="countrybtn">Spain</button></a>
                               </div>
                               <div class="pic"><img src="images/sweden.webp" width="100%" height="30%">
-                                <a><button class="countrybtn">Sweden</button></a>
+                                <a><button id="sweden" class="countrybtn">Sweden</button></a>
                                 </div>
 </div>
 
-  <script type="text/javascript">
-    if (document.images) {
-    img1 = new Image();
-    img1.src = "image.jpg";
-  }
-  </script>
-</body>
+  <script>
+$(function(){
+   $("#austria").click(function () {
+      $(this).text(function(i, text){
+          return text === "1874" ? "Austria" : "1874";
+      })
+   });
+})
+
+$(function(){
+   $("#belgium").click(function () {
+      $(this).text(function(i, text){
+          return text === "1783" ? "Belgium" : "1783";
+      })
+   });
+})
+
+$(function(){
+   $("#bulgaria").click(function () {
+      $(this).text(function(i, text){
+          return text === "1884" ? "Bulgaria" : "1884";
+      })
+   });
+})
+
+$(function(){
+   $("#croatia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1911" ? "Croatia" : "1911";
+      })
+   });
+})
+$(function(){
+   $("#cyprus").click(function () {
+      $(this).text(function(i, text){
+          return text === "2006" ? "Cyprus" : "2006";
+      })
+   });
+})
+
+$(function(){
+   $("#czechia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1896" ? "Czechia" : "1896";
+      })
+   });
+})
+
+$(function(){
+   $("#denmark").click(function () {
+      $(this).text(function(i, text){
+          return text === "1733" ? "Denmark" : "1733";
+      })
+   });
+})
+
+$(function(){
+   $("#estonia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1870" ? "Estonia" : "1870";
+      })
+   });
+})
+
+$(function(){
+   $("#finland").click(function () {
+      $(this).text(function(i, text){
+          return text === "1926" ? "Finland" : "1926";
+      })
+   });
+})
+
+$(function(){
+   $("#france").click(function () {
+      $(this).text(function(i, text){
+          return text === "1722" ? "France" : "1722";
+      })
+   });
+})
+
+$(function(){
+   $("#germany").click(function () {
+      $(this).text(function(i, text){
+          return text === "1884" ? "Germany" : "1884";
+      })
+   });
+})
+
+$(function(){
+   $("#greece").click(function () {
+      $(this).text(function(i, text){
+          return text === "1843" ? "Greece" : "1843";
+      })
+   });
+})
+
+$(function(){
+   $("#hungary").click(function () {
+      $(this).text(function(i, text){
+          return text === "1885" ? "Hungary" : "1885";
+      })
+   });
+})
+
+$(function(){
+   $("#ireland").click(function () {
+      $(this).text(function(i, text){
+          return text === "1745" ? "Ireland" : "1745";
+      })
+   });
+})
+
+$(function(){
+   $("#italy").click(function () {
+      $(this).text(function(i, text){
+          return text === "1623" ? "Italy" : "1623";
+      })
+   });
+})
+
+$(function(){
+   $("#latvia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1863" ? "Latvia" : "1863";
+      })
+   });
+})
+
+$(function(){
+   $("#lithuania").click(function () {
+      $(this).text(function(i, text){
+          return text === "1976" ? "Lithuania" : "1976";
+      })
+   });
+})
+
+$(function(){
+   $("#luxembourg").click(function () {
+      $(this).text(function(i, text){
+          return text === "1858" ? "Luxembourg" : "1858";
+      })
+   });
+})
+
+$(function(){
+   $("#malta").click(function () {
+      $(this).text(function(i, text){
+          return text === "2011" ? "Malta" : "2011";
+      })
+   });
+})
+
+$(function(){
+   $("#netherlands").click(function () {
+      $(this).text(function(i, text){
+          return text === "±1229" ? "Netherlands" : "±1229";
+      })
+   });
+})
+
+$(function(){
+   $("#poland").click(function () {
+      $(this).text(function(i, text){
+          return text === "1918" ? "Poland" : "1918";
+      })
+   });
+})
+
+$(function(){
+   $("#portugal").click(function () {
+      $(this).text(function(i, text){
+          return text === "1598" ? "Portugal" : "1598";
+      })
+   });
+})
+
+$(function(){
+   $("#romania").click(function () {
+      $(this).text(function(i, text){
+          return text === "1984" ? "Romania" : "1984";
+      })
+   });
+})
+
+$(function(){
+   $("#slovakia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1994" ? "Slovakia" : "1994";
+      })
+   });
+})
+
+$(function(){
+   $("#slovenia").click(function () {
+      $(this).text(function(i, text){
+          return text === "1954" ? "Slovenia" : "1954";
+      })
+   });
+})
+
+$(function(){
+   $("#spain").click(function () {
+      $(this).text(function(i, text){
+          return text === "1843" ? "Spain" : "1843";
+      })
+   });
+})
+
+$(function(){
+   $("#sweden").click(function () {
+      $(this).text(function(i, text){
+          return text === "1897" ? "Sweden" : "1897";
+      })
+   });
+})
+</script>
 </html>

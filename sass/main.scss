@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-#demo{
+#tree{
   margin-top: 1vh;
   margin-bottom: 60px;
   justify-content: center;
@@ -71,7 +71,7 @@ body::-webkit-scrollbar {
    font-size: 17px;
   }
   @media (max-width: $small-screen){
-    font-size: 14vw;;
+    font-size: 14px;;
   }
 }
 .folder:active{
