@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 *, html {
   scroll-behavior: smooth !important;
   margin: 0;
@@ -40,14 +42,29 @@ body {
 }
 body .pictures {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
+p {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 .pic {
-  width: 100vw;
+  width: 88vw;
+  left: 6vw;
+  margin-bottom: 12px;
   height: auto;
   display: flex;
   background-color: #5D4954;
@@ -69,7 +86,7 @@ body::-webkit-scrollbar {
   height: 63px;
   left: 50%;
   transform: translateX(-50%);
-  top: 67%;
+  bottom: 10%;
   text-align: center;
   color: white;
   padding: 12px 4px;
@@ -124,6 +141,10 @@ body::-webkit-scrollbar {
   transition: 1s ease;
 }
 
+img {
+  border-radius: 24px;
+}
+
 *, html {
   scroll-behavior: smooth !important;
 }
@@ -169,7 +190,9 @@ body::-webkit-scrollbar {
 }
 
 .pic {
-  width: 100vw;
+  width: 88vw;
+  left: 6vw;
+  margin-bottom: 12px;
   height: auto;
   display: flex;
   background-color: #5D4954;
@@ -191,7 +214,7 @@ body::-webkit-scrollbar {
   height: 63px;
   left: 50%;
   transform: translateX(-50%);
-  top: 67%;
+  bottom: 10%;
   text-align: center;
   color: white;
   padding: 12px 4px;
